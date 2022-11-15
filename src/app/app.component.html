@@ -1,0 +1,79 @@
+<header class="position-sticky">
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">
+            TODO LIST is a LIST where you can note down your day-to-day tasks. The purpose of this list is to remind you to check things off the list at the end of each day.  Use them to ensure you stay on top of your work and do what needs to be done. Do not fill it with distractions. Make sure your list has something meaningful to you.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://s.tutoriex.live/instagram" class="text-white"
+                >Follow on Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://s.tutoriex.live/github" class="text-white"
+                >Github Profile</a
+              >
+            </li>
+            <li>
+              <a href="https://s.tutoriex.live/yt" class="text-white"
+                >Youtube Channel</a
+              >
+            </li>
+            <li><a routerLink="/about" class="text-white">About me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a routerLink="" class="navbar-brand d-flex align-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list-task"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"
+          />
+          <path
+            d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"
+          />
+        </svg>
+        <strong class="m-2">TODO LIST</strong>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader"
+        aria-controls="navbarHeader"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+

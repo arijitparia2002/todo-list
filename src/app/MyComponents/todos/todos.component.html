@@ -1,0 +1,13 @@
+<!-- <h1 class="text-center m-4 font-weight-bold">Todo-list by Arijit</h1> -->
+<div class="container">
+  <app-todo-add (todoAddEvent)="addTodo($event)"></app-todo-add>
+</div>
+<h4 class="text-center m-3">Yours Todo List</h4>
+<div class="container" *ngFor="let todo of todos; index as i">
+  <app-todo-items
+    [todo]="todo"
+    [i]="i"
+    (todoDeleteEvent)="deleteTodo($event)"
+    (checkBoxClickEvent)="checkBoxClick($event)"
+  ></app-todo-items>
+</div>
